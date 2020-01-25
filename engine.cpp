@@ -30,15 +30,11 @@ int engine::run()
   while (keepGoing)
   {
     prs.readAndProcess(retVal);
-    std::cout << "DEBUG: " + String.valueOf(retVal[0]) + " " + String.valueOf(retVal[1]) + " " String.valueOf(retVal[2]) << '\n';
+    std::cout << "DEBUG: " << retVal[0] << " " << retVal[1] << " " << retVal[2] << '\n';
     if(retVal[2]<0 && ansSet)
     {
       retVal[2]=retVal[2]*-1;
       retVal[0] = getAns();
-    }
-    else if(!ansSet)
-    {
-      retVal[2]=5;
     }
     if(retVal[2]==1)
     {

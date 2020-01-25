@@ -15,8 +15,6 @@ void parser::readAndProcess(int arg[])
     }
     else
     {
-      arg[0] = stoi(substr);
-      substr = "";
       switch (input.at(i)) {
         case '+': arg[2] = 1;break;
         case '-': arg[2] = 2;break;
@@ -28,6 +26,8 @@ void parser::readAndProcess(int arg[])
           arg[2] = arg[2]*-1;
         }
       }
+      arg[0] = stoi(substr);
+      substr = "";  
     }
   }
   arg[1] = stoi(substr);
