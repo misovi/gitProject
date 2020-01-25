@@ -27,7 +27,7 @@ void parser::readAndProcess(int arg[])
         }
       }
       arg[0] = stoi(substr);
-      substr = "";  
+      substr = "";
     }
   }
   arg[1] = stoi(substr);
