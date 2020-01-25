@@ -1,10 +1,9 @@
 #include"parser.h"
-#include<iostream>
-#include<string>
+
 
 void parser::readAndProcess(int arg[])
 {
-  int val[3];
+  //int val[3];
   std::string input;
   std::string substr;
   std::cin>>input;

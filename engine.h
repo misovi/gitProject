@@ -7,5 +7,5 @@ public:
   engine();
   int run();
   int getAns();
-  void setAns();
+  void setAns(int v);
 };
