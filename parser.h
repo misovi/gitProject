@@ -3,5 +3,5 @@ private:
   /* data */
 
 public:
-  void readAndProcess();
+  void readAndProcess(int arg[]);
 };
