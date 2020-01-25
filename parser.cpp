@@ -22,7 +22,11 @@ void parser::readAndProcess(int arg[])
         case '-': arg[2] = 2;break;
         case '*': arg[2] = 3;break;
         case '/': arg[2] = 4;break;
-        default: arg[2] = -1;
+        default: arg[2] = -5;
+        if(i==0)
+        {
+          arg[2] = arg[2]*-1;
+        }
       }
     }
   }
