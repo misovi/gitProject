@@ -1,12 +1,19 @@
-#include"parser.h"
+#include <algorithm>
 
+#include"parser.h"
 
 void parser::readAndProcess(int arg[])
 {
   //int val[3];
   std::string input;
   std::string substr;
-  std::cin>>input;
+
+  // Read whole line
+  std::getline(std::cin, input);
+
+  // Remove spaces from input
+  input.erase(std::remove(input.begin(), input.end(), ' '), input.end());
+
   for(int i=0;i<input.length();i++)
   {
     if(input.at(i)>='0' && input.at(i)<='9')
