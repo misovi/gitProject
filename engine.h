@@ -1,11 +1,12 @@
-class engine {
+class engine
+{
 private:
-int ans = 0;
-bool ansSet = false;
+  double ans = 0;
+  bool ansSet = false;
 
 public:
   engine();
   int run();
-  int getAns();
-  void setAns(int v);
+  double getAns();
+  void setAns(double v);
 };

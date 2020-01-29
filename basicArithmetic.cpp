@@ -1,17 +1,17 @@
-#include"basicArithmetic.h"
-int basicArithmetic::sum(int a, int b)
+#include "basicArithmetic.h"
+float basicArithmetic::sum(float a, float b)
 {
-  return a+b;
+  return a + b;
 }
-int basicArithmetic::subtract(int a, int b)
+float basicArithmetic::subtract(float a, float b)
 {
-  return a-b;
+  return a - b;
 }
-int basicArithmetic::multiply(int a, int b)
+float basicArithmetic::multiply(float a, float b)
 {
-  return a*b;
+  return a * b;
 }
-int basicArithmetic::divide(int a, int b)
+float basicArithmetic::divide(float a, float b)
 {
-  return a/b;
+  return a / b;
 }
